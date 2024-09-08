@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  background-color: #f6f1eb;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  padding: 3rem 15rem;
+
+  .logo {
+    margin: auto;
+    padding-left: 200px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    color: #0d6032;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  margin: 5rem 15rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 708px;
+
+  .proceeds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 18px;
+    width: 213px;
+
+    border: 1px dashed #757772;
+    border-radius: 40px;
+    color: #757772;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  span {
+    padding-bottom: 2.5rem;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+
+    color: #757772;
+  }
+
+  button {
+    width: 269px;
+    padding: 22px 52px;
+
+    color: #ffffff;
+    border: 1px solid #0d6032;
+    border-radius: 40px;
+    background-color: #0d6032;
+
+    line-height: 24px;
+    font-size: 18px;
+
+    text-wrap: nowrap;
+  }
+}
