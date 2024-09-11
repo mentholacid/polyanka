@@ -9,12 +9,11 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 3rem 15rem;
 
   background-color: #ffffff;
 
-  padding: 3rem 15rem;
-
-  .logo {
+  :first-child {
     margin: auto;
     padding-left: 200px;
   }
@@ -28,6 +27,7 @@ body {
     color: #0d6032;
     font-weight: 700;
     font-size: 20px;
+    text-wrap: nowrap;
   }
 }
 
@@ -36,7 +36,7 @@ body {
   justify-content: space-between;
   align-items: end;
 
-  margin: 5rem 15rem;
+  padding: 5rem 0;
 }
 
 .info {
@@ -45,13 +45,13 @@ body {
 
   max-width: 708px;
 
-  .proceeds {
+  :first-child {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    padding: 10px 18px;
     width: 213px;
+    padding: 10px 18px;
 
     border: 1px dashed #757772;
     border-radius: 40px;
@@ -89,4 +89,9 @@ body {
 
     text-wrap: nowrap;
   }
+}
+
+.wrapper {
+  width: 1440px;
+  margin: auto;
 }
