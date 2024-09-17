@@ -5,11 +5,10 @@ body {
   background-color: #f6f1eb;
 }
 
-.header {
+header {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  padding: 3rem 15rem;
+  padding: 3rem 0;
 
   background-color: #ffffff;
 
@@ -28,6 +27,10 @@ body {
     font-weight: 700;
     font-size: 20px;
     text-wrap: nowrap;
+
+    img {
+      padding: 0;
+    }
   }
 }
 
@@ -94,4 +97,215 @@ body {
 .wrapper {
   width: 1440px;
   margin: auto;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+}
+
+.list-dot-style {
+  padding: 0 0 3rem 2rem;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+
+  background-image: url(./assets/concept-marker.svg);
+  background-position: 0px 3px;
+  background-repeat: no-repeat;
+
+  list-style-type: none;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  padding-bottom: 5rem;
+}
+
+.card {
+  width: 342px;
+  padding: 1.5rem;
+
+  color: #757772;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 24px;
+  background-color: #ffffff;
+
+  :first-child {
+    margin: 0;
+
+    color: black;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 80px;
+  }
+}
+
+.church-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 800px;
+
+  background-image: url(./assets/church.svg);
+  background-size: cover;
+
+  color: #ffffff;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+
+  border-radius: 40px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0 4rem 4rem;
+  }
+
+  h3 {
+    height: 160px;
+
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  .description {
+    padding: 0;
+    backdrop-filter: blur(8px);
+  }
+}
+
+.worth {
+  display: flex;
+  background-color: #ffffff;
+  padding: 2rem 0 6rem 0;
+  margin-top: 4rem;
+
+  .headers-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.concept-wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+
+  div {
+    padding-right: 4rem;
+    font-weight: 500;
+
+    li {
+      font-weight: 400;
+    }
+  }
+
+  img {
+    border-radius: 40px;
+  }
+
+  span {
+    color: #757772;
+  }
+}
+
+.create-for-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-weight: 400;
+  color: #757772;
+
+  h4 {
+    font-weight: 500;
+    color: black;
+
+    &::before {
+      content: "«Полянка» создана как ";
+    }
+  }
+}
+
+.perfect-for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0d6032;
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+    line-height: 64px;
+
+    color: black;
+  }
+}
+
+
+
+
+
+table {
+  border-spacing: 0;
+
+  text-align: center;
+  font-size: 64px;
+
+  tr {
+    &:nth-child(odd) {
+      background-color: #0d6032;
+      color: violet;
+
+      td {
+        border: 4px solid violet;
+
+        &:first-child {
+          border-right: unset;
+        }
+
+        &:nth-child(2) {
+          border-left: unset;
+          border-right: unset;
+        }
+
+        &:last-child {
+          border-left: unset;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: violet;
+      color: #0d6032;
+
+      td {
+        border: 4px solid #0d6032;
+
+        &:first-child {
+          border-right: unset;
+        }
+
+        &:nth-child(2) {
+          border-left: unset;
+          border-right: unset;
+        }
+
+        &:last-child {
+          border-left: unset;
+        }
+      }
+    }
+  }
 }
