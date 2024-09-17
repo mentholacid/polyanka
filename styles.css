@@ -5,16 +5,19 @@ body {
   background-color: #f6f1eb;
 }
 
+.header-wrapper {
+  background-color: #ffffff;
+  width: 100%;
+}
+
 header {
   display: flex;
   align-items: center;
   padding: 3rem 0;
 
-  background-color: #ffffff;
-
   :first-child {
     margin: auto;
-    padding-left: 200px;
+    padding-left: 130px;
   }
 
   .contact {
@@ -181,7 +184,6 @@ header {
 
   .description {
     padding: 0;
-    backdrop-filter: blur(8px);
   }
 }
 
@@ -253,10 +255,6 @@ header {
   }
 }
 
-
-
-
-
 table {
   border-spacing: 0;
 
@@ -273,6 +271,7 @@ table {
 
         &:first-child {
           border-right: unset;
+          border-radius: 10px 0 0 10px;
         }
 
         &:nth-child(2) {
@@ -282,6 +281,7 @@ table {
 
         &:last-child {
           border-left: unset;
+          border-radius: 0 10px 10px 0;
         }
       }
     }
@@ -295,6 +295,7 @@ table {
 
         &:first-child {
           border-right: unset;
+          border-radius: 10px 0 0 10px;
         }
 
         &:nth-child(2) {
@@ -304,6 +305,7 @@ table {
 
         &:last-child {
           border-left: unset;
+          border-radius: 0 10px 10px 0;
         }
       }
     }
